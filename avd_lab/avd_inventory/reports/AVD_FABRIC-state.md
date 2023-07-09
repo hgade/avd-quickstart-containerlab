@@ -1,0 +1,258 @@
+
+# Validate State Report
+
+**Table of Contents:**
+
+- [Validate State Report](validate-state-report)
+  - [Test Results Summary](#test-results-summary)
+  - [Failed Test Results Summary](#failed-test-results-summary)
+  - [All Test Results](#all-test-results)
+
+## Test Results Summary
+
+### Summary Totals
+
+| Total Tests | Total Tests Passed | Total Tests Failed |
+| ----------- | ------------------ | ------------------ |
+| 202 | 196 | 6 |
+
+### Summary Totals Devices Under Tests
+
+| DUT | Total Tests | Tests Passed | Tests Failed | Categories Failed |
+| --- | ----------- | ------------ | ------------ | ----------------- |
+| leaf1 |  33 | 32 | 1 | NTP |
+| leaf2 |  33 | 32 | 1 | NTP |
+| leaf3 |  33 | 32 | 1 | NTP |
+| leaf4 |  33 | 32 | 1 | NTP |
+| spine1 |  35 | 34 | 1 | NTP |
+| spine2 |  35 | 34 | 1 | NTP |
+
+### Summary Totals Per Category
+
+| Test Category | Total Tests | Tests Passed | Tests Failed |
+| ------------- | ----------- | ------------ | ------------ |
+| NTP |  6 | 0 | 6 |
+| Interface State |  54 | 54 | 0 |
+| LLDP Topology |  16 | 16 | 0 |
+| IP Reachability |  16 | 16 | 0 |
+| BGP |  38 | 38 | 0 |
+| Routing Table |  48 | 48 | 0 |
+| Loopback0 Reachability |  24 | 24 | 0 |
+
+## Failed Test Results Summary
+
+| Test ID | Node | Test Category | Test Description | Test | Test Result | Failure Reason |
+| ------- | ---- | ------------- | ---------------- | ---- | ----------- | -------------- |
+| 1 | leaf1 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 2 | leaf2 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 3 | leaf3 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 4 | leaf4 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 5 | spine1 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 6 | spine2 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+
+## All Test Results
+
+| Test ID | Node | Test Category | Test Description | Test | Test Result | Failure Reason |
+| ------- | ---- | ------------- | ---------------- | ---- | ----------- | -------------- |
+| 1 | leaf1 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 2 | leaf2 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 3 | leaf3 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 4 | leaf4 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 5 | spine1 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 6 | spine2 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 7 | leaf1 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet49/1 - P2P_LINK_TO_SPINE1_Ethernet1/1 | PASS | - |
+| 8 | leaf1 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet50/1 - P2P_LINK_TO_SPINE2_Ethernet1/1 | PASS | - |
+| 9 | leaf1 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet1/1 - host11_leaf1_Ethernet1/1 | PASS | - |
+| 10 | leaf1 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet1/2 - host12_leaf1_Ethernet1/2 | PASS | - |
+| 11 | leaf2 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet49/1 - P2P_LINK_TO_SPINE1_Ethernet2/1 | PASS | - |
+| 12 | leaf2 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet50/1 - P2P_LINK_TO_SPINE2_Ethernet2/1 | PASS | - |
+| 13 | leaf2 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet1/1 - host11_leaf2_Ethernet1/1 | PASS | - |
+| 14 | leaf2 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet1/2 - host12_leaf2_Ethernet1/2 | PASS | - |
+| 15 | leaf3 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet49/1 - P2P_LINK_TO_SPINE1_Ethernet3/1 | PASS | - |
+| 16 | leaf3 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet50/1 - P2P_LINK_TO_SPINE2_Ethernet3/1 | PASS | - |
+| 17 | leaf3 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet1/1 - host21_leaf3_Ethernet1/1 | PASS | - |
+| 18 | leaf3 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet1/2 - host22_leaf3_Ethernet1/2 | PASS | - |
+| 19 | leaf4 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet49/1 - P2P_LINK_TO_SPINE1_Ethernet4/1 | PASS | - |
+| 20 | leaf4 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet50/1 - P2P_LINK_TO_SPINE2_Ethernet4/1 | PASS | - |
+| 21 | leaf4 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet1/1 - host21_leaf4_Ethernet1/1 | PASS | - |
+| 22 | leaf4 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet1/2 - host22_leaf4_Ethernet1/2 | PASS | - |
+| 23 | spine1 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet1/1 - P2P_LINK_TO_LEAF1_Ethernet49/1 | PASS | - |
+| 24 | spine1 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet2/1 - P2P_LINK_TO_LEAF2_Ethernet49/1 | PASS | - |
+| 25 | spine1 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet3/1 - P2P_LINK_TO_LEAF3_Ethernet49/1 | PASS | - |
+| 26 | spine1 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet4/1 - P2P_LINK_TO_LEAF4_Ethernet49/1 | PASS | - |
+| 27 | spine2 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet1/1 - P2P_LINK_TO_LEAF1_Ethernet50/1 | PASS | - |
+| 28 | spine2 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet2/1 - P2P_LINK_TO_LEAF2_Ethernet50/1 | PASS | - |
+| 29 | spine2 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet3/1 - P2P_LINK_TO_LEAF3_Ethernet50/1 | PASS | - |
+| 30 | spine2 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet4/1 - P2P_LINK_TO_LEAF4_Ethernet50/1 | PASS | - |
+| 31 | leaf1 | Interface State | Port-Channel Interface Status & Line Protocol == "up" | Port-Channel11 - host11_leaf1_to_host11 | PASS | - |
+| 32 | leaf1 | Interface State | Port-Channel Interface Status & Line Protocol == "up" | Port-Channel12 - host12_leaf3_to_host12 | PASS | - |
+| 33 | leaf2 | Interface State | Port-Channel Interface Status & Line Protocol == "up" | Port-Channel11 - host11_leaf1_to_host11 | PASS | - |
+| 34 | leaf2 | Interface State | Port-Channel Interface Status & Line Protocol == "up" | Port-Channel12 - host12_leaf3_to_host12 | PASS | - |
+| 35 | leaf3 | Interface State | Port-Channel Interface Status & Line Protocol == "up" | Port-Channel11 - host21_leaf3_to_host21 | PASS | - |
+| 36 | leaf3 | Interface State | Port-Channel Interface Status & Line Protocol == "up" | Port-Channel12 - host22_leaf3_to_host22 | PASS | - |
+| 37 | leaf4 | Interface State | Port-Channel Interface Status & Line Protocol == "up" | Port-Channel11 - host21_leaf3_to_host21 | PASS | - |
+| 38 | leaf4 | Interface State | Port-Channel Interface Status & Line Protocol == "up" | Port-Channel12 - host22_leaf3_to_host22 | PASS | - |
+| 39 | leaf1 | Interface State | Vlan Interface Status & Line Protocol == "up" | Vlan100 - TENANT_A_BGP_TO_COMPUTE | PASS | - |
+| 40 | leaf2 | Interface State | Vlan Interface Status & Line Protocol == "up" | Vlan100 - TENANT_A_BGP_TO_COMPUTE | PASS | - |
+| 41 | leaf3 | Interface State | Vlan Interface Status & Line Protocol == "up" | Vlan150 - TENANT_A_BGP_TO_COMPUTE | PASS | - |
+| 42 | leaf4 | Interface State | Vlan Interface Status & Line Protocol == "up" | Vlan150 - TENANT_A_BGP_TO_COMPUTE | PASS | - |
+| 43 | leaf1 | Interface State | Vxlan Interface Status & Line Protocol == "up" | Vxlan1 | PASS | - |
+| 44 | leaf2 | Interface State | Vxlan Interface Status & Line Protocol == "up" | Vxlan1 | PASS | - |
+| 45 | leaf3 | Interface State | Vxlan Interface Status & Line Protocol == "up" | Vxlan1 | PASS | - |
+| 46 | leaf4 | Interface State | Vxlan Interface Status & Line Protocol == "up" | Vxlan1 | PASS | - |
+| 47 | leaf1 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback0 - EVPN_Overlay_Peering | PASS | - |
+| 48 | leaf1 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback1 - VTEP_VXLAN_Tunnel_Source | PASS | - |
+| 49 | leaf1 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback100 - TEST_VRF_VTEP_DIAGNOSTICS | PASS | - |
+| 50 | leaf2 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback0 - EVPN_Overlay_Peering | PASS | - |
+| 51 | leaf2 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback1 - VTEP_VXLAN_Tunnel_Source | PASS | - |
+| 52 | leaf2 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback100 - TEST_VRF_VTEP_DIAGNOSTICS | PASS | - |
+| 53 | leaf3 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback0 - EVPN_Overlay_Peering | PASS | - |
+| 54 | leaf3 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback1 - VTEP_VXLAN_Tunnel_Source | PASS | - |
+| 55 | leaf3 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback100 - TEST_VRF_VTEP_DIAGNOSTICS | PASS | - |
+| 56 | leaf4 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback0 - EVPN_Overlay_Peering | PASS | - |
+| 57 | leaf4 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback1 - VTEP_VXLAN_Tunnel_Source | PASS | - |
+| 58 | leaf4 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback100 - TEST_VRF_VTEP_DIAGNOSTICS | PASS | - |
+| 59 | spine1 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback0 - EVPN_Overlay_Peering | PASS | - |
+| 60 | spine2 | Interface State | Loopback Interface Status & Line Protocol == "up" | Loopback0 - EVPN_Overlay_Peering | PASS | - |
+| 61 | leaf1 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet49/1 - remote: spine1_Ethernet1/1 | PASS | - |
+| 62 | leaf1 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet50/1 - remote: spine2_Ethernet1/1 | PASS | - |
+| 63 | leaf2 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet49/1 - remote: spine1_Ethernet2/1 | PASS | - |
+| 64 | leaf2 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet50/1 - remote: spine2_Ethernet2/1 | PASS | - |
+| 65 | leaf3 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet49/1 - remote: spine1_Ethernet3/1 | PASS | - |
+| 66 | leaf3 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet50/1 - remote: spine2_Ethernet3/1 | PASS | - |
+| 67 | leaf4 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet49/1 - remote: spine1_Ethernet4/1 | PASS | - |
+| 68 | leaf4 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet50/1 - remote: spine2_Ethernet4/1 | PASS | - |
+| 69 | spine1 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet1/1 - remote: leaf1_Ethernet49/1 | PASS | - |
+| 70 | spine1 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet2/1 - remote: leaf2_Ethernet49/1 | PASS | - |
+| 71 | spine1 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet3/1 - remote: leaf3_Ethernet49/1 | PASS | - |
+| 72 | spine1 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet4/1 - remote: leaf4_Ethernet49/1 | PASS | - |
+| 73 | spine2 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet1/1 - remote: leaf1_Ethernet50/1 | PASS | - |
+| 74 | spine2 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet2/1 - remote: leaf2_Ethernet50/1 | PASS | - |
+| 75 | spine2 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet3/1 - remote: leaf3_Ethernet50/1 | PASS | - |
+| 76 | spine2 | LLDP Topology | LLDP topology - validate peer and interface | local: Ethernet4/1 - remote: leaf4_Ethernet50/1 | PASS | - |
+| 77 | leaf1 | IP Reachability | ip reachability test p2p links | Source: leaf1_Ethernet49/1 - Destination: spine1_Ethernet1/1 | PASS | - |
+| 78 | leaf1 | IP Reachability | ip reachability test p2p links | Source: leaf1_Ethernet50/1 - Destination: spine2_Ethernet1/1 | PASS | - |
+| 79 | leaf2 | IP Reachability | ip reachability test p2p links | Source: leaf2_Ethernet49/1 - Destination: spine1_Ethernet2/1 | PASS | - |
+| 80 | leaf2 | IP Reachability | ip reachability test p2p links | Source: leaf2_Ethernet50/1 - Destination: spine2_Ethernet2/1 | PASS | - |
+| 81 | leaf3 | IP Reachability | ip reachability test p2p links | Source: leaf3_Ethernet49/1 - Destination: spine1_Ethernet3/1 | PASS | - |
+| 82 | leaf3 | IP Reachability | ip reachability test p2p links | Source: leaf3_Ethernet50/1 - Destination: spine2_Ethernet3/1 | PASS | - |
+| 83 | leaf4 | IP Reachability | ip reachability test p2p links | Source: leaf4_Ethernet49/1 - Destination: spine1_Ethernet4/1 | PASS | - |
+| 84 | leaf4 | IP Reachability | ip reachability test p2p links | Source: leaf4_Ethernet50/1 - Destination: spine2_Ethernet4/1 | PASS | - |
+| 85 | spine1 | IP Reachability | ip reachability test p2p links | Source: spine1_Ethernet1/1 - Destination: leaf1_Ethernet49/1 | PASS | - |
+| 86 | spine1 | IP Reachability | ip reachability test p2p links | Source: spine1_Ethernet2/1 - Destination: leaf2_Ethernet49/1 | PASS | - |
+| 87 | spine1 | IP Reachability | ip reachability test p2p links | Source: spine1_Ethernet3/1 - Destination: leaf3_Ethernet49/1 | PASS | - |
+| 88 | spine1 | IP Reachability | ip reachability test p2p links | Source: spine1_Ethernet4/1 - Destination: leaf4_Ethernet49/1 | PASS | - |
+| 89 | spine2 | IP Reachability | ip reachability test p2p links | Source: spine2_Ethernet1/1 - Destination: leaf1_Ethernet50/1 | PASS | - |
+| 90 | spine2 | IP Reachability | ip reachability test p2p links | Source: spine2_Ethernet2/1 - Destination: leaf2_Ethernet50/1 | PASS | - |
+| 91 | spine2 | IP Reachability | ip reachability test p2p links | Source: spine2_Ethernet3/1 - Destination: leaf3_Ethernet50/1 | PASS | - |
+| 92 | spine2 | IP Reachability | ip reachability test p2p links | Source: spine2_Ethernet4/1 - Destination: leaf4_Ethernet50/1 | PASS | - |
+| 93 | leaf1 | BGP | ArBGP is configured and operating | ArBGP | PASS | - |
+| 94 | leaf2 | BGP | ArBGP is configured and operating | ArBGP | PASS | - |
+| 95 | leaf3 | BGP | ArBGP is configured and operating | ArBGP | PASS | - |
+| 96 | leaf4 | BGP | ArBGP is configured and operating | ArBGP | PASS | - |
+| 97 | spine1 | BGP | ArBGP is configured and operating | ArBGP | PASS | - |
+| 98 | spine2 | BGP | ArBGP is configured and operating | ArBGP | PASS | - |
+| 99 | leaf1 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.0 | PASS | - |
+| 100 | leaf1 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.2 | PASS | - |
+| 101 | leaf2 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.64 | PASS | - |
+| 102 | leaf2 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.66 | PASS | - |
+| 103 | leaf3 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.128 | PASS | - |
+| 104 | leaf3 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.130 | PASS | - |
+| 105 | leaf4 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.192 | PASS | - |
+| 106 | leaf4 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.194 | PASS | - |
+| 107 | spine1 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.1 | PASS | - |
+| 108 | spine1 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.65 | PASS | - |
+| 109 | spine1 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.129 | PASS | - |
+| 110 | spine1 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.193 | PASS | - |
+| 111 | spine2 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.3 | PASS | - |
+| 112 | spine2 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.67 | PASS | - |
+| 113 | spine2 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.131 | PASS | - |
+| 114 | spine2 | BGP | ip bgp peer state established (ipv4) | bgp_neighbor: 172.31.255.195 | PASS | - |
+| 115 | leaf1 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.1 | PASS | - |
+| 116 | leaf1 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.2 | PASS | - |
+| 117 | leaf2 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.1 | PASS | - |
+| 118 | leaf2 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.2 | PASS | - |
+| 119 | leaf3 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.1 | PASS | - |
+| 120 | leaf3 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.2 | PASS | - |
+| 121 | leaf4 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.1 | PASS | - |
+| 122 | leaf4 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.2 | PASS | - |
+| 123 | spine1 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.129 | PASS | - |
+| 124 | spine1 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.130 | PASS | - |
+| 125 | spine1 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.131 | PASS | - |
+| 126 | spine1 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.132 | PASS | - |
+| 127 | spine2 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.129 | PASS | - |
+| 128 | spine2 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.130 | PASS | - |
+| 129 | spine2 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.131 | PASS | - |
+| 130 | spine2 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 192.0.255.132 | PASS | - |
+| 131 | leaf1 | Routing Table | Remote VTEP address | 192.0.254.1 | PASS | - |
+| 132 | leaf1 | Routing Table | Remote VTEP address | 192.0.254.2 | PASS | - |
+| 133 | leaf1 | Routing Table | Remote VTEP address | 192.0.254.3 | PASS | - |
+| 134 | leaf1 | Routing Table | Remote VTEP address | 192.0.254.4 | PASS | - |
+| 135 | leaf2 | Routing Table | Remote VTEP address | 192.0.254.1 | PASS | - |
+| 136 | leaf2 | Routing Table | Remote VTEP address | 192.0.254.2 | PASS | - |
+| 137 | leaf2 | Routing Table | Remote VTEP address | 192.0.254.3 | PASS | - |
+| 138 | leaf2 | Routing Table | Remote VTEP address | 192.0.254.4 | PASS | - |
+| 139 | leaf3 | Routing Table | Remote VTEP address | 192.0.254.1 | PASS | - |
+| 140 | leaf3 | Routing Table | Remote VTEP address | 192.0.254.2 | PASS | - |
+| 141 | leaf3 | Routing Table | Remote VTEP address | 192.0.254.3 | PASS | - |
+| 142 | leaf3 | Routing Table | Remote VTEP address | 192.0.254.4 | PASS | - |
+| 143 | leaf4 | Routing Table | Remote VTEP address | 192.0.254.1 | PASS | - |
+| 144 | leaf4 | Routing Table | Remote VTEP address | 192.0.254.2 | PASS | - |
+| 145 | leaf4 | Routing Table | Remote VTEP address | 192.0.254.3 | PASS | - |
+| 146 | leaf4 | Routing Table | Remote VTEP address | 192.0.254.4 | PASS | - |
+| 147 | spine1 | Routing Table | Remote VTEP address | 192.0.254.1 | PASS | - |
+| 148 | spine1 | Routing Table | Remote VTEP address | 192.0.254.2 | PASS | - |
+| 149 | spine1 | Routing Table | Remote VTEP address | 192.0.254.3 | PASS | - |
+| 150 | spine1 | Routing Table | Remote VTEP address | 192.0.254.4 | PASS | - |
+| 151 | spine2 | Routing Table | Remote VTEP address | 192.0.254.1 | PASS | - |
+| 152 | spine2 | Routing Table | Remote VTEP address | 192.0.254.2 | PASS | - |
+| 153 | spine2 | Routing Table | Remote VTEP address | 192.0.254.3 | PASS | - |
+| 154 | spine2 | Routing Table | Remote VTEP address | 192.0.254.4 | PASS | - |
+| 155 | leaf1 | Routing Table | Remote Lo0 address | 192.0.255.129 | PASS | - |
+| 156 | leaf1 | Routing Table | Remote Lo0 address | 192.0.255.130 | PASS | - |
+| 157 | leaf1 | Routing Table | Remote Lo0 address | 192.0.255.131 | PASS | - |
+| 158 | leaf1 | Routing Table | Remote Lo0 address | 192.0.255.132 | PASS | - |
+| 159 | leaf2 | Routing Table | Remote Lo0 address | 192.0.255.129 | PASS | - |
+| 160 | leaf2 | Routing Table | Remote Lo0 address | 192.0.255.130 | PASS | - |
+| 161 | leaf2 | Routing Table | Remote Lo0 address | 192.0.255.131 | PASS | - |
+| 162 | leaf2 | Routing Table | Remote Lo0 address | 192.0.255.132 | PASS | - |
+| 163 | leaf3 | Routing Table | Remote Lo0 address | 192.0.255.129 | PASS | - |
+| 164 | leaf3 | Routing Table | Remote Lo0 address | 192.0.255.130 | PASS | - |
+| 165 | leaf3 | Routing Table | Remote Lo0 address | 192.0.255.131 | PASS | - |
+| 166 | leaf3 | Routing Table | Remote Lo0 address | 192.0.255.132 | PASS | - |
+| 167 | leaf4 | Routing Table | Remote Lo0 address | 192.0.255.129 | PASS | - |
+| 168 | leaf4 | Routing Table | Remote Lo0 address | 192.0.255.130 | PASS | - |
+| 169 | leaf4 | Routing Table | Remote Lo0 address | 192.0.255.131 | PASS | - |
+| 170 | leaf4 | Routing Table | Remote Lo0 address | 192.0.255.132 | PASS | - |
+| 171 | spine1 | Routing Table | Remote Lo0 address | 192.0.255.129 | PASS | - |
+| 172 | spine1 | Routing Table | Remote Lo0 address | 192.0.255.130 | PASS | - |
+| 173 | spine1 | Routing Table | Remote Lo0 address | 192.0.255.131 | PASS | - |
+| 174 | spine1 | Routing Table | Remote Lo0 address | 192.0.255.132 | PASS | - |
+| 175 | spine2 | Routing Table | Remote Lo0 address | 192.0.255.129 | PASS | - |
+| 176 | spine2 | Routing Table | Remote Lo0 address | 192.0.255.130 | PASS | - |
+| 177 | spine2 | Routing Table | Remote Lo0 address | 192.0.255.131 | PASS | - |
+| 178 | spine2 | Routing Table | Remote Lo0 address | 192.0.255.132 | PASS | - |
+| 179 | leaf1 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf1 - 192.0.255.129 Destination: 192.0.255.129 | PASS | - |
+| 180 | leaf1 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf1 - 192.0.255.129 Destination: 192.0.255.130 | PASS | - |
+| 181 | leaf1 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf1 - 192.0.255.129 Destination: 192.0.255.131 | PASS | - |
+| 182 | leaf1 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf1 - 192.0.255.129 Destination: 192.0.255.132 | PASS | - |
+| 183 | leaf2 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf2 - 192.0.255.130 Destination: 192.0.255.129 | PASS | - |
+| 184 | leaf2 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf2 - 192.0.255.130 Destination: 192.0.255.130 | PASS | - |
+| 185 | leaf2 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf2 - 192.0.255.130 Destination: 192.0.255.131 | PASS | - |
+| 186 | leaf2 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf2 - 192.0.255.130 Destination: 192.0.255.132 | PASS | - |
+| 187 | leaf3 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf3 - 192.0.255.131 Destination: 192.0.255.129 | PASS | - |
+| 188 | leaf3 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf3 - 192.0.255.131 Destination: 192.0.255.130 | PASS | - |
+| 189 | leaf3 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf3 - 192.0.255.131 Destination: 192.0.255.131 | PASS | - |
+| 190 | leaf3 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf3 - 192.0.255.131 Destination: 192.0.255.132 | PASS | - |
+| 191 | leaf4 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf4 - 192.0.255.132 Destination: 192.0.255.129 | PASS | - |
+| 192 | leaf4 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf4 - 192.0.255.132 Destination: 192.0.255.130 | PASS | - |
+| 193 | leaf4 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf4 - 192.0.255.132 Destination: 192.0.255.131 | PASS | - |
+| 194 | leaf4 | Loopback0 Reachability | Loopback0 Reachability | Source: leaf4 - 192.0.255.132 Destination: 192.0.255.132 | PASS | - |
+| 195 | spine1 | Loopback0 Reachability | Loopback0 Reachability | Source: spine1 - 192.0.255.1 Destination: 192.0.255.129 | PASS | - |
+| 196 | spine1 | Loopback0 Reachability | Loopback0 Reachability | Source: spine1 - 192.0.255.1 Destination: 192.0.255.130 | PASS | - |
+| 197 | spine1 | Loopback0 Reachability | Loopback0 Reachability | Source: spine1 - 192.0.255.1 Destination: 192.0.255.131 | PASS | - |
+| 198 | spine1 | Loopback0 Reachability | Loopback0 Reachability | Source: spine1 - 192.0.255.1 Destination: 192.0.255.132 | PASS | - |
+| 199 | spine2 | Loopback0 Reachability | Loopback0 Reachability | Source: spine2 - 192.0.255.2 Destination: 192.0.255.129 | PASS | - |
+| 200 | spine2 | Loopback0 Reachability | Loopback0 Reachability | Source: spine2 - 192.0.255.2 Destination: 192.0.255.130 | PASS | - |
+| 201 | spine2 | Loopback0 Reachability | Loopback0 Reachability | Source: spine2 - 192.0.255.2 Destination: 192.0.255.131 | PASS | - |
+| 202 | spine2 | Loopback0 Reachability | Loopback0 Reachability | Source: spine2 - 192.0.255.2 Destination: 192.0.255.132 | PASS | - |
