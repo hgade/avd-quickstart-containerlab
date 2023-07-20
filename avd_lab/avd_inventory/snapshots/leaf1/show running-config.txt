@@ -1,0 +1,47 @@
+! Command: show running-config
+! device: leaf1 (cEOSLab, EOS-4.25.5M-23663200.4255M (engineering build))
+!
+no aaa root
+!
+username cvpadmin privilege 15 role network-admin secret sha512 $6$rdcayNdN3.MCfcyO$bvRfH/h.vs6f.xFTJCBRW043/d..sKK5py2IFNiRtxAB/tMnt7kjUSsXN42MsyplWbjN6xnnFsKNNZBWD8inq1
+!
+daemon TerminAttr
+   exec /usr/bin/TerminAttr -cvaddr=192.168.122.241:9910 -cvauth=key, -cvvrf=MGMT -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -taillogs
+   no shutdown
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname leaf1
+!
+spanning-tree mode mstp
+!
+vrf instance MGMT
+!
+interface Ethernet1/1
+!
+interface Ethernet1/2
+!
+interface Ethernet1/3
+!
+interface Ethernet49/1
+!
+interface Ethernet50/1
+!
+interface Management0
+   vrf MGMT
+   ip address 192.168.123.21/24
+!
+no ip routing
+no ip routing vrf MGMT
+!
+ip route vrf MGMT 0.0.0.0/0 192.168.123.1
+!
+management api http-commands
+   no shutdown
+   !
+   vrf MGMT
+      no shutdown
+!
+end

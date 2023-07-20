@@ -1,0 +1,17 @@
+cEOSLab
+Hardware version: 
+Serial number: 
+Hardware MAC address: 001c.731a.dbde
+System MAC address: 001c.731a.dbde
+
+Software image version: 4.25.5M-23663200.4255M (engineering build)
+Architecture: x86_64
+Internal build version: 4.25.5M-23663200.4255M
+Internal build ID: 050de75d-5a9e-4240-bae1-bf6e2e4a64e4
+
+cEOS tools version: 1.1
+Kernel version: 5.10.104-linuxkit
+
+Uptime: 0 weeks, 0 days, 2 hours and 37 minutes
+Total memory: 17403044 kB
+Free memory: 2994348 kB

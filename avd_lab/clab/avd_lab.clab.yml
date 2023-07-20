@@ -55,7 +55,7 @@ topology:
   - endpoints: ["host11:eth1", "leaf1:eth1_1"]
   - endpoints: ["host11:eth2", "leaf2:eth1_1"]
   - endpoints: ["host12:eth1", "leaf1:eth1_2"]
-  - endpoints: ["host12:eth2", "leaf2:eth1_2"]
+  - endpoints: ["host12:eth2", "leaf1:eth1_3"]
   - endpoints: ["host21:eth1", "leaf3:eth1_1"]
   - endpoints: ["host21:eth2", "leaf4:eth1_1"]
   - endpoints: ["host22:eth1", "leaf3:eth1_2"]

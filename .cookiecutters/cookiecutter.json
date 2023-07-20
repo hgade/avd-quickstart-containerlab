@@ -116,7 +116,7 @@
         ],
         "clab": {
             "name": "avd_lab",
-            "ceos_image": "ceos-lab:4.28.0F",
+            "ceos_image": "ceos:4.25.5M",
             "mgmt_network": {
                 "name": "custom_mgmt",
                 "subnet": "192.168.123.0/24"

@@ -1,0 +1,5 @@
+Interface                      Status         Protocol           Description
+Et1/1                          up             up                 
+Et49/1                         up             up                 
+Et50/1                         up             up                 
+Ma0                            up             up

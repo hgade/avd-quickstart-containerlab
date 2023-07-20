@@ -8,7 +8,7 @@ ENV _IN_CONTAINER="True"
 # install latest containerlab
 RUN bash -c "$(curl -sL https://get.containerlab.dev)"
 
-# The eos-downloader can be used to import ceos-lab images from arista.com automatically
+# The eos-downloader can be used to import ceos images from arista.com automatically
 # That only works for Arista employees currently if "ARISTA_TOKEN" env variable is set on the system
 # Otherwise the image must be downloaded and imported manually
 ENV ARISTA_TOKEN=""

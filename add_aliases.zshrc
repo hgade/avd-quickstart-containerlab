@@ -21,3 +21,4 @@ alias host12='sshpass -p arista123 ssh -o "StrictHostKeyChecking no" cvpadmin@19
 alias host21='sshpass -p arista123 ssh -o "StrictHostKeyChecking no" cvpadmin@192.168.123.121'
 
 alias host22='sshpass -p arista123 ssh -o "StrictHostKeyChecking no" cvpadmin@192.168.123.122'
+
